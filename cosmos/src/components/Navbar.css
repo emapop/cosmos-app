@@ -1,12 +1,18 @@
+.nav-content-position a {
+    color: whitesmoke;
+    text-decoration: none;
+}
 .nav-container {
     display:flex;
     flex-direction: row;
     align-items: center;
     text-align: center;
     justify-content: space-around;
-    height: 55px;
+    height: 4rem;
     min-width: 100vh;
     background-color: #1e1d23;
+    font-size: 0.78125rem;
+    font-weight: 400;
 }
 
 .nav-cosmos-logo {
@@ -18,13 +24,17 @@
     flex-direction: row;
     align-items: center;
 }
+a:hover {
+   cursor: pointer;
+   color:rgb(151, 173, 173);
+}
 .nav-content-margin{
     margin-left: 38px;
 }
-.nav-home-logo {
+.nav-logo-menu {
     height: 20px;
     width: 20px;
 }
-.nav-space{
-    margin-right: 4px;
+.nav-space {
+    margin-right: 5px;
 }
