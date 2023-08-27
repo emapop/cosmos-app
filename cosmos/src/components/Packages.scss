@@ -1,0 +1,46 @@
+.packages-component {
+  margin: 45px 0px;
+  height: 8rem;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  min-width: 90vh;
+}
+.packages-container {
+  min-width: 100vh;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  height: auto;
+}
+.packages-logo-container {
+  margin: 0px 0px;
+}
+.packages-logo-container span {
+  font-weight: 700;
+}
+.packages-logo-container h2 {
+  font-weight: 400;
+  margin: 0px;
+  font-size: 1.5rem;
+}
+.packages-arrow h1 {
+  border-radius: 2px;
+  margin: 0px 57px;
+  color: rgba(227, 227, 250, 0.842);
+  transform: scale(1.4, 2.7);
+  font-size: 0.89rem;
+  font-weight: 600;
+}
+.packages-text {
+  background-color: #2c32407e;
+  padding: 10px 43px;
+}
+.packages-text span {
+  font-weight: 700;
+  font-size: 2rem;
+}

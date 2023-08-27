@@ -1,52 +1,52 @@
 .nav-content-position a {
-    text-decoration: none;
-    color: inherit;
-    margin-top: 2px;
+  text-decoration: none;
+  color: inherit;
+  margin-top: 2px;
 }
 
 ul {
-    margin: 0;
-    padding: 0;
+  margin: 0;
+  padding: 0;
 }
-.nav-component{
-    left: 0;
-    top: 0;
-    bottom: auto;
-    right: 0;
-    width: auto;
-    height: 4rem;
-    background-color: #1e1d23;
-    display:flex;
-    flex-direction: row;
-    align-items: center;
-    text-align: center;
+.nav-component {
+  left: 0;
+  top: 0;
+  bottom: auto;
+  right: 0;
+  width: auto;
+  height: 4rem;
+  background-color: #1e1d23;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  text-align: center;
 }
 .nav-container {
-    display:flex;
-    flex-grow: 1;
-    flex-direction: row;
-    align-items: center;
-    text-align: center;
-    justify-content: space-around;
-    height: auto;
+  display: flex;
+  flex-grow: 1;
+  flex-direction: row;
+  align-items: center;
+  text-align: center;
+  justify-content: space-around;
+  height: auto;
 }
 
 .nav-cosmos-logo {
-    height: 24px;
-    width: 154px;
+  height: 24px;
+  width: 154px;
 }
 .nav-content-position {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
 }
 a:hover {
-   cursor: pointer;
-   color:rgb(151, 173, 173);
+  cursor: pointer;
+  color: rgb(151, 173, 173);
 }
-.nav-content-margin{
-    margin-left: 38px;
+.nav-content-margin {
+  margin-left: 38px;
 }
 .nav-space {
-    margin-right: 5px;
+  margin-right: 5px;
 }
