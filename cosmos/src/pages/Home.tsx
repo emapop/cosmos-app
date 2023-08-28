@@ -1,15 +1,15 @@
 import React from "react";
 import Navbar from "../components/Navbar";
-import Slider from "../components/Slider";
-import Packages from "../components/Packages";
+import BodyComponent from "../components/BodyComponent";
+import Footer from "../components/Footer";
 import "./Home.scss";
 
-const Home: React.FunctionComponent = () => {
+const Home: React.FC = () => {
   return (
     <div className="home-component">
       <Navbar />
-      <Slider />
-      <Packages />
+      <BodyComponent />
+      <Footer />
     </div>
   );
 };

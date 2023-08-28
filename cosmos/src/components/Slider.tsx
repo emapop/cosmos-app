@@ -1,25 +1,53 @@
-import React from "react";
+import React, { useState } from "react";
 import "./Slider.scss";
-import Planet from "../assets/slide1.png";
+import Planet1 from "../assets/slide1.png";
+import Planet2 from "../assets/slide2.jpg";
+import ButtonComponent from "./ButtonComponent";
 
-const Slider: React.FunctionComponent = () => {
+const Slider: React.FC = () => {
+  const [current, setCurrent] = useState<number>(0);
+
+  const sliderData = [
+    {
+      image: Planet1,
+    },
+    {
+      image: Planet2,
+    },
+  ];
+  const length = sliderData.length;
+  const nextSlide = () => {
+    setCurrent(current === length - 1 ? 0 : current + 1);
+  };
+
+  const prevSlide = () => {
+    setCurrent(current === 0 ? length - 1 : current - 1);
+  };
+
+  if (!Array.isArray(sliderData) || sliderData.length <= 0) {
+    return null;
+  }
   return (
     <div className="slider-component">
-      <div className="slider-mover">
+      <div id="arrow-left" className="slider-mover" onClick={prevSlide}>
         <h1>{"<"}</h1>
       </div>
       <div className="slider-container">
-        <div className="slider-container-img">
-          <img src={Planet} alt="planet" />
-          <div className="slider-container-img-txt">
-            <h2>ENCELADUS</h2>
-            <p>
-              The Saturn System <br />
-              Distance: 9.5 <br />
-              AUPopulation: 3920
-            </p>
-          </div>
-        </div>
+        {sliderData.map((slider, index) => {
+          return (
+            <div className={index === current ? 'slider-container-img' : 'slider-container-deactive'}>
+              {index ===current && (<img src={slider.image} alt="planet" />)}
+              <div className="slider-container-img-txt">
+                <h2>ENCELADUS</h2>
+                <p>
+                  The Saturn System <br />
+                  Distance: 9.5 <br />
+                  AUPopulation: 3920
+                </p>
+              </div>
+            </div>
+          );
+        })}
         <div className="slider-content1">
           <div className="slider-content2">
             <div className="slider-content-description">
@@ -40,12 +68,12 @@ const Slider: React.FunctionComponent = () => {
                 <h1>999.990 €</h1>
                 <p>one way ticket</p>
               </div>
-              <button>Purchase</button>
+              <ButtonComponent text="Purchase" width={5.551} />
             </div>
           </div>
         </div>
       </div>
-      <div className="slider-mover">
+      <div id="arrow-right" className="slider-mover" onClick={nextSlide}>
         <h1>{">"}</h1>
       </div>
     </div>

@@ -5,7 +5,7 @@ import LeafeLogo from "../assets/leaf-logo.png";
 
 import "./Packages.scss";
 
-const Packages: React.FunctionComponent = () => {
+const Packages: React.FC = () => {
   return (
     <div className="packages-component">
       <div className="packages-logo-container">

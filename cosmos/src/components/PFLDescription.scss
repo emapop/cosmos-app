@@ -1,0 +1,30 @@
+.pfldescription-component {
+    display: flex;
+    min-width: 100vh;
+    justify-content: flex-start;
+    margin-bottom: 40px;
+}
+.pfldescription-container {
+    display: flex;
+    flex-direction: column;
+    width: 690px;
+
+}
+
+.pfldescription-text {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-bottom: 12px;
+}
+.pfldescription-text span {
+    font-weight: 700;
+    font-size: 1.857rem;
+  }
+
+  .pfldescription-text hr {
+    width: 529px;
+    text-align: left;
+    color: #3A424E;
+    margin-left: 0px;
+  }

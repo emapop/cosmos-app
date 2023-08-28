@@ -6,7 +6,7 @@ import HomeLogo from "../assets/nav-home-logo.png";
 import MoonLogo from "../assets/nav-moon-logo.png";
 import SpaceshipLogo from "../assets/nav-spaceship-logo.png";
 
-const Navbar: React.FunctionComponent = () => {
+const Navbar: React.FC = () => {
   return (
     <nav className="nav-component">
       <ul className="nav-container">
