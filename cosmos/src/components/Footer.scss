@@ -1,31 +1,31 @@
 .footer-component {
-    left: 0;
-    top: 0;
-    bottom: auto;
-    right: 0;
-    width: auto;
-    height: 11rem;
-    background-color: #1e1d23;
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    padding: 0 14%;
-    padding-top: 30px;
+  left: 0;
+  top: 0;
+  bottom: auto;
+  right: 0;
+  width: auto;
+  height: 11rem;
+  background-color: #1e1d23;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  padding: 0 14%;
+  padding-top: 30px;
 
-    @media (min-width: 586px) and (max-width:768px) {
-      height: 9rem;
-    }
-    @media (min-width: 768px) and (max-width:992px) {
-      padding: 0 6%;
-   }
-    @media (max-width: 575px) {
-      padding: 0% 7%;
-    }
+  @media (min-width: 586px) and (max-width: 768px) {
+    height: 9rem;
   }
-  .footer-component p {
-    text-align: left;
-    width: 65%;
-    @media (max-width: 586) {
-      width: 40%;
+  @media (min-width: 768px) and (max-width: 992px) {
+    padding: 0 6%;
   }
+  @media (max-width: 575px) {
+    padding: 0% 7%;
   }
+}
+.footer-component p {
+  text-align: left;
+  width: 65%;
+  @media (max-width: 586) {
+    width: 40%;
+  }
+}

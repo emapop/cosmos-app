@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import "./Slider.scss";
 import Planet1 from "../assets/slide1.png";
 import Planet2 from "../assets/slide2.jpg";
-import Planet3 from '../assets/slide3.jpg'
+import Planet3 from "../assets/slide3.jpg";
 import ButtonComponent from "./ButtonComponent";
 
 const Slider: React.FC = () => {
@@ -17,7 +17,7 @@ const Slider: React.FC = () => {
     },
     {
       image: Planet3,
-    }
+    },
   ];
   const length = sliderData.length;
   const nextSlide = () => {
@@ -39,8 +39,16 @@ const Slider: React.FC = () => {
       <div className="slider-container">
         {sliderData.map((slider, index) => {
           return (
-            <div className={index === current ? 'slider-container-img' : 'slider-container-deactive'}>
-              {index ===current && (<img src={slider.image} width='684' height='340' alt="planet" />)}
+            <div
+              className={
+                index === current
+                  ? "slider-container-img"
+                  : "slider-container-deactive"
+              }
+            >
+              {index === current && (
+                <img src={slider.image} width="684" height="340" alt="planet" />
+              )}
               <div className="slider-container-img-txt">
                 <h2>ENCELADUS</h2>
                 <p>

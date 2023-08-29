@@ -12,15 +12,15 @@ const Navbar: React.FC = () => {
   const handleMenuToggle = () => {
     setMenuOpen(!menuOpen);
   };
-return(
-  <nav className="nav-component">
-    <div className="hamburger-icon" onClick={handleMenuToggle}>
-      <div className={`hamburger-line ${menuOpen ? "open-hamburger" : ""}`} />
-      <div className={`hamburger-line ${menuOpen ? "open-hamburger" : ""}`} />
-      <div className={`hamburger-line ${menuOpen ? "open-hamburger" : ""}`} />
-    </div>
-    <ul className={`nav-container ${menuOpen ? "open" : ""}`}>
-    <li className="nav-content-position">
+  return (
+    <nav className="nav-component">
+      <div className="hamburger-icon" onClick={handleMenuToggle}>
+        <div className={`hamburger-line ${menuOpen ? "open-hamburger" : ""}`} />
+        <div className={`hamburger-line ${menuOpen ? "open-hamburger" : ""}`} />
+        <div className={`hamburger-line ${menuOpen ? "open-hamburger" : ""}`} />
+      </div>
+      <ul className={`nav-container ${menuOpen ? "open" : ""}`}>
+        <li className="nav-content-position">
           <div className="nav-main-logo">
             <a href="">
               <img
@@ -52,9 +52,9 @@ return(
           </a>
           <p>0</p>
         </li>
-    </ul>
-  </nav>
-)
+      </ul>
+    </nav>
+  );
 };
 
 export default Navbar;

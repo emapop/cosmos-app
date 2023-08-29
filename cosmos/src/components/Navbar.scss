@@ -1,4 +1,3 @@
-
 .nav-content-position a {
   text-decoration: none;
   color: inherit;
@@ -35,7 +34,7 @@ ul {
   width: 30px;
   position: absolute;
   z-index: 1;
-  @media (min-width: 586px) and (max-width:768px) {
+  @media (min-width: 586px) and (max-width: 768px) {
     margin-left: 38px;
   }
   @media (max-width: 586px) {
@@ -43,13 +42,12 @@ ul {
   }
 
   .hamburger-line {
-    width:30px;
+    width: 30px;
     height: 4px;
     background-color: white;
     margin: 4px 0px;
     transition: transform 0.3s, opacity 0.3s;
   }
-
 
   &.open {
     .hamburger-line:nth-child(1) {
@@ -66,16 +64,16 @@ ul {
 
 .nav-container {
   display: flex;
-    flex-grow: 1;
-    flex-direction: row;
-    align-items: center;
-    text-align: center;
-    justify-content: space-between;
-    height: auto;
-    padding: 0 14%;
-    @media (min-width: 768px) and (max-width:992px) {
-      padding: 0 6%;
-   }
+  flex-grow: 1;
+  flex-direction: row;
+  align-items: center;
+  text-align: center;
+  justify-content: space-between;
+  height: auto;
+  padding: 0 14%;
+  @media (min-width: 768px) and (max-width: 992px) {
+    padding: 0 6%;
+  }
 }
 .open {
   position: absolute;
@@ -83,14 +81,14 @@ ul {
   height: 8.4rem;
   top: 4.5rem;
   left: 0rem;
-  padding-left:10%;
+  padding-left: 10%;
   background-color: #1e1d23;
   position: relative;
   padding-right: 30%;
   z-index: 1;
   font-size: 1.1rem;
-  
-  .nav-content-position{
+
+  .nav-content-position {
     display: flex;
   }
   .nav-cosmos-logo {
@@ -98,12 +96,10 @@ ul {
   }
 }
 .open-hamburger {
-    width: 30px;
-    height: 3px;
-    margin: 3px 0;
-    background-color: white;
-
-
+  width: 30px;
+  height: 3px;
+  margin: 3px 0;
+  background-color: white;
 }
 .nav-cosmos-logo {
   height: 25px;
@@ -128,12 +124,12 @@ a:hover {
 
 @media (max-width: 768px) {
   .hamburger-icon {
-    display:flex;
+    display: flex;
   }
-  .nav-content-position{
-    display:none;
+  .nav-content-position {
+    display: none;
   }
-  .nav-container{
+  .nav-container {
     height: 5rem;
     padding: 0px;
     align-content: flex-end;
@@ -146,7 +142,4 @@ a:hover {
       color: white;
     }
   }
-    
 }
-
-
