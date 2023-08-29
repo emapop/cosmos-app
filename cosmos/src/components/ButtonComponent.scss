@@ -6,6 +6,16 @@
     border-radius: 3px;
     border: none;
     padding: 0px 10px;
+    @media (min-width: 768px) and (max-width:992px) {
+        width: 15px;
+        height: 17px;
+        padding: 0px 5px;
+    }
+    @media (min-width: 768px) and (max-width:992px) {
+        width: 15px;
+        height: 20px;
+        padding: 0px 7px;
+     }
   }
   
   .button-component:hover {
