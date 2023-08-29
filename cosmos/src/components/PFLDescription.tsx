@@ -24,7 +24,7 @@ const PFLDescription: React.FC = () => {
             erat, vitae pulvinar nunc pretium nec. Integer id facilisis nibh. In
             porta at tellus eget consectetur. Vestibulum nisl nunc, euismod a
             aliquet sit amet, fermentum in massa. 
-            <br />
+            <br /> <br />
             Nunc quis eros facilisis,
             sagittis ex vitae, mattis sapien. Duis feugiat dictum vehicula.
             Nullam vestibulum tellus nisi, eu euismod velit finibus et. Aliquam
@@ -32,7 +32,7 @@ const PFLDescription: React.FC = () => {
             ipsum dignissim, molestie est vitae, tincidunt elit. Pellentesque
             suscipit, magna ac molestie luctus, magna massa placerat purus, in
             dictum urna dui vel massa. Curabitur eget est felis. Morbi eleifend
-            libero a turpis sollicitudin aliquet. <br />
+            libero a turpis sollicitudin aliquet. <br /> <br />
             Aliquam id risus non sem
             pulvinar pulvinar in quis tellus. Pellentesque eget ipsum dignissim,
             molestie est vitae, tincidunt elit. Pellentesque suscipit, magna ac
@@ -42,7 +42,7 @@ const PFLDescription: React.FC = () => {
             <br />
           </p>
         </div>
-        <ButtonComponent text="Checkout" width={6.1} />
+        <ButtonComponent text="Checkout" width={6.05} />
       </div>
     </div>
   );

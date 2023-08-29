@@ -1,13 +1,19 @@
 .pfldescription-component {
     display: flex;
-    min-width: 100vh;
+    min-width: 100%;
     justify-content: flex-start;
-    margin-bottom: 40px;
+    margin: 44px 0px 84px 0px;
+    @media (min-width: 768px) and (max-width:992px) {
+        margin: 44px 0px 54px 0px;
+      }
 }
 .pfldescription-container {
     display: flex;
     flex-direction: column;
-    width: 690px;
+    width: 65%;
+    @media (max-width: 568) {
+        width: 60%;
+    }
 
 }
 
@@ -20,11 +26,17 @@
 .pfldescription-text span {
     font-weight: 700;
     font-size: 1.857rem;
+    @media (max-width: 568) {
+        font-size: 1rem;
+    }
   }
 
   .pfldescription-text hr {
-    width: 529px;
+    width: 70%;
     text-align: left;
     color: #3A424E;
     margin-left: 0px;
+    @media (max-width: 568) {
+        width: 60%
+    }
   }

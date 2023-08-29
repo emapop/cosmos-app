@@ -36,10 +36,10 @@ const Packages: React.FC = () => {
         <h1>{">"}</h1>
       </div>
       <div className="packages-text">
-        <h1>
+        <h2>
           <span>ENJOY</span>
           <br />A NEW WORLD
-        </h1>
+        </h2>
       </div>
     </div>
   );

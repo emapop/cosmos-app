@@ -4,14 +4,24 @@
     bottom: auto;
     right: 0;
     width: auto;
-    height: 10rem;
+    height: 11rem;
     background-color: #1e1d23;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: flex-start;
+    padding: 0 14%;
+    padding-top: 30px;
+    @media (max-width: 768px){
+      height: 20rem;
+    }
+    @media (max-width: 575px) {
+      padding: 0% 7%;
+    }
   }
   .footer-component p {
     text-align: left;
-    width: 65vh;
-    padding-left: 180px;
+    width: 65%;
+    @media (max-width: 568) {
+      width: 40%;
+  }
   }
