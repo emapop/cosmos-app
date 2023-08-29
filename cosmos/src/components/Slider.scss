@@ -213,13 +213,9 @@
   right: 0;
   position: absolute;
   padding-right: 14%;
-  @media (min-width: 992px) and (max-width: 1064px) {
-    padding-right: 14%;
-  }
 
   @media (min-width: 992px) and (max-width: 1064px) {
-    top: 53.49%;
-    margin-top: -3%;
+    padding-right: 14%;
   }
   @media (min-width: 586px) and (max-width: 768px) {
     padding-right: 10%;
@@ -326,12 +322,12 @@
   padding: 0.425rem 0.66rem;
   align-items: center;
   background-color: #1f232d9f;
-  @media (min-width: 586px) and (max-width: 768px) {
-    width: 90%;
-  }
   @media (min-width: 768px) and (max-width: 992px) {
     width: 86%;
     justify-content: space-between;
+  }
+  @media (min-width: 586px) and (max-width: 768px) {
+    width: 90%;
   }
   @media (max-width: 586px) {
     width: 100%;
@@ -346,24 +342,24 @@
 .slider-content-price h2 {
   margin: 0rem;
   font-size: 1.7rem;
+  @media (min-width: 768px) and (max-width: 992px) {
+    font-size: 0.5rem;
+  }
   @media (min-width: 586px) and (max-width: 768px) {
     font-size: 0.5rem;
   }
-  @media (min-width: 768px) and (max-width: 992px) {
-    font-size: 0.5rem;
-    @media (max-width: 586px) {
-      font-size: 0.47rem;
-    }
+  @media (max-width: 586px) {
+    font-size: 0.47rem;
   }
 }
 .slider-content-price p {
   margin: 0rem;
   font-size: 0.7rem;
   font-weight: 300;
-  @media (min-width: 586px) and (max-width: 768px) {
+  @media (min-width: 768px) and (max-width: 992px) {
     font-size: 0.5rem;
   }
-  @media (min-width: 768px) and (max-width: 992px) {
+  @media (min-width: 586px) and (max-width: 768px) {
     font-size: 0.5rem;
   }
   @media (max-width: 586px) {
