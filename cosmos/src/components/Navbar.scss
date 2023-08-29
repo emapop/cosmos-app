@@ -22,8 +22,9 @@ ul {
   flex-direction: row;
   align-items: center;
   text-align: center;
-  //position: sticky;
- // z-index: 1;
+  @media (max-width: 586px) {
+    height: 3.4rem;
+  }
 }
 
 .hamburger-icon {
@@ -34,8 +35,11 @@ ul {
   width: 30px;
   position: absolute;
   z-index: 1;
-  @media (min-width: 576px) and (max-width:768px) {
+  @media (min-width: 586px) and (max-width:768px) {
     margin-left: 38px;
+  }
+  @media (max-width: 586px) {
+    margin: 2px 8px;
   }
 
   .hamburger-line {
@@ -45,6 +49,7 @@ ul {
     margin: 4px 0px;
     transition: transform 0.3s, opacity 0.3s;
   }
+
 
   &.open {
     .hamburger-line:nth-child(1) {
@@ -75,15 +80,15 @@ ul {
 .open {
   position: absolute;
   flex-direction: column;
-  flex-wrap: wrap;
-  height: 7.4rem;
-  top: 2rem;
-  width: 85%;
-  left: 5rem;
+  height: 8.4rem;
+  top: 4.5rem;
+  left: 0rem;
   padding-left:10%;
   background-color: #1e1d23;
-  position: absolute;
+  position: relative;
   padding-right: 30%;
+  z-index: 1;
+  font-size: 1.1rem;
   
   .nav-content-position{
     display: flex;
@@ -132,6 +137,14 @@ a:hover {
     height: 5rem;
     padding: 0px;
     align-content: flex-end;
+    img {
+      display: none;
+    }
+    a img {
+      display: flex;
+      width: 17px;
+      color: white;
+    }
   }
     
 }

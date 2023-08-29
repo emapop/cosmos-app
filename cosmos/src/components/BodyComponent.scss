@@ -4,7 +4,7 @@
     padding: 0 14%;
     height: 100%;
 
-    @media (min-width: 576px) and (max-width:768px) {
+    @media (min-width: 586px) and (max-width:768px) {
       padding: 0 6%;
     }
 
@@ -12,10 +12,10 @@
       padding: 0 6%;
     }
     
-    @media (max-width: 575px) {
+    @media (max-width: 586px) {
         width: auto;
         height: 100%;
-        padding: 0% 6%;
+        padding: 0% 0%;
       }
     
 }
